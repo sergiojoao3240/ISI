@@ -1,0 +1,11 @@
+Brand;Model;LicensePlate;Type;Valid
+BMW    ;X3    ;FG-CF-48;Diesel          ;Y
+Ford   ;Fiesta;AB-CD-01;Petrol          ;Y
+Renault;Zoe   ;ZX-60-53;Electric        ;Y
+Seat   ;Ibiza ;23-AB-25;Reduced Mobility;Y
+Fiat   ;Punto ;50-25-BJ;Diesel          ;Y
+Toyota ;Prius ;79-AZ-43;Electric        ;Y
+Honda  ;Civic ;AD-70-25;Reduced Mobility;Y
+Seat   ;Ibiza ;23-AJ-25;Reduced Mobility;Y
+Renault;Zoe   ;01-AA-25;Electric        ;Y
+Renault;Zoe   ;20-NM-53;Electric        ;Y

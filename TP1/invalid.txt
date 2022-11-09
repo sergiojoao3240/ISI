@@ -1,0 +1,2 @@
+Brand;Model;LicensePlate;Type;Valid
+Renault;Zoe   ;ZW-60   ;Electric        ;N
