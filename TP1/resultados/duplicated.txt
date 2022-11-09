@@ -1,0 +1,2 @@
+Brand;Model;LicensePlate;Type;Valid;Duplicated
+Seat   ;Ibiza ;23-AJ-25;Reduced Mobility;Y;2

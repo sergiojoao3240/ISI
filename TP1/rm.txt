@@ -1,4 +1,0 @@
-Brand;Model;LicensePlate;Type;Valid
-Seat   ;Ibiza ;23-AB-25;RM              ;Y
-Honda  ;Civic ;AD-70-25;RM              ;Y
-Seat   ;Ibiza ;23-AJ-25;RM              ;Y

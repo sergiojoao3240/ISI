@@ -9,3 +9,4 @@ Honda  ;Civic ;AD-70-25;Reduced Mobility;Y
 Seat   ;Ibiza ;23-AJ-25;Reduced Mobility;Y
 Renault;Zoe   ;01-AA-25;Electric        ;Y
 Renault;Zoe   ;20-NM-53;Electric        ;Y
+Seat   ;Ibiza ;23-AJ-25;Reduced Mobility;Y

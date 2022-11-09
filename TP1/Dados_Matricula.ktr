@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <transformation>
   <info>
-    <name>ISIPark_Access</name>
+    <name>Dados_Matricula</name>
     <description/>
     <extended_description/>
     <trans_version/>
@@ -514,11 +514,36 @@
     </hop>
     <hop>
       <from>Valid License Plates</from>
+      <to>Sort rows 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Sort rows 2</from>
       <to>Verify Duplicated Rows</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
+      <from>Filter rows</from>
+      <to>Duplicated License Plates</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
       <from>Verify Duplicated Rows</from>
+      <to>Filter rows</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Filter rows</from>
+      <to>Dummy (do nothing)</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Dummy (do nothing)</from>
+      <to>Select values</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Select values</from>
       <to>Standard Type</to>
       <enabled>Y</enabled>
     </hop>
@@ -609,7 +634,7 @@
     </GUI>
   </step>
   <step>
-    <name>Electric</name>
+    <name>Duplicated License Plates</name>
     <type>TextFileOutput</type>
     <description/>
     <distribute>Y</distribute>
@@ -633,7 +658,7 @@
     <fileNameField/>
     <create_parent_folder>Y</create_parent_folder>
     <file>
-      <name>${Internal.Transformation.Filename.Directory}/electric</name>
+      <name>${Internal.Transformation.Filename.Directory}/resultados/duplicated</name>
       <servlet_output>N</servlet_output>
       <do_not_open_new_file_init>N</do_not_open_new_file_init>
       <extention>txt</extention>
@@ -660,7 +685,64 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>944</xloc>
+      <xloc>768</xloc>
+      <yloc>32</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Electric</name>
+    <type>TextFileOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <separator>;</separator>
+    <enclosure>"</enclosure>
+    <enclosure_forced>N</enclosure_forced>
+    <enclosure_fix_disabled>N</enclosure_fix_disabled>
+    <header>Y</header>
+    <footer>N</footer>
+    <format>DOS</format>
+    <compression>None</compression>
+    <encoding/>
+    <endedLine/>
+    <fileNameInField>N</fileNameInField>
+    <fileNameField/>
+    <create_parent_folder>Y</create_parent_folder>
+    <file>
+      <name>${Internal.Transformation.Filename.Directory}/resultados/electric</name>
+      <servlet_output>N</servlet_output>
+      <do_not_open_new_file_init>N</do_not_open_new_file_init>
+      <extention>txt</extention>
+      <append>N</append>
+      <split>N</split>
+      <haspartno>N</haspartno>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <SpecifyFormat>N</SpecifyFormat>
+      <date_time_format/>
+      <add_to_result_filenames>Y</add_to_result_filenames>
+      <pad>N</pad>
+      <fast_dump>N</fast_dump>
+      <splitevery/>
+    </file>
+    <fields>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1216</xloc>
       <yloc>96</yloc>
       <draw>Y</draw>
     </GUI>
@@ -690,7 +772,7 @@
     <fileNameField/>
     <create_parent_folder>Y</create_parent_folder>
     <file>
-      <name>${Internal.Transformation.Filename.Directory}/general</name>
+      <name>${Internal.Transformation.Filename.Directory}/resultados/general</name>
       <servlet_output>N</servlet_output>
       <do_not_open_new_file_init>N</do_not_open_new_file_init>
       <extention>txt</extention>
@@ -717,7 +799,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>944</xloc>
+      <xloc>1216</xloc>
       <yloc>16</yloc>
       <draw>Y</draw>
     </GUI>
@@ -747,7 +829,7 @@
     <fileNameField/>
     <create_parent_folder>Y</create_parent_folder>
     <file>
-      <name>${Internal.Transformation.Filename.Directory}/invalid</name>
+      <name>${Internal.Transformation.Filename.Directory}/resultados/invalid</name>
       <servlet_output>N</servlet_output>
       <do_not_open_new_file_init>N</do_not_open_new_file_init>
       <extention>txt</extention>
@@ -848,7 +930,7 @@
     <fileNameField/>
     <create_parent_folder>Y</create_parent_folder>
     <file>
-      <name>${Internal.Transformation.Filename.Directory}/motorcycle</name>
+      <name>${Internal.Transformation.Filename.Directory}/resultados/motorcycle</name>
       <servlet_output>N</servlet_output>
       <do_not_open_new_file_init>N</do_not_open_new_file_init>
       <extention>txt</extention>
@@ -875,7 +957,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>944</xloc>
+      <xloc>1216</xloc>
       <yloc>256</yloc>
       <draw>Y</draw>
     </GUI>
@@ -905,7 +987,7 @@
     <fileNameField/>
     <create_parent_folder>Y</create_parent_folder>
     <file>
-      <name>${Internal.Transformation.Filename.Directory}/rm</name>
+      <name>${Internal.Transformation.Filename.Directory}/resultados/rm</name>
       <servlet_output>N</servlet_output>
       <do_not_open_new_file_init>N</do_not_open_new_file_init>
       <extention>txt</extention>
@@ -932,7 +1014,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>944</xloc>
+      <xloc>1216</xloc>
       <yloc>176</yloc>
       <draw>Y</draw>
     </GUI>
@@ -1022,7 +1104,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>752</xloc>
+      <xloc>1024</xloc>
       <yloc>144</yloc>
       <draw>Y</draw>
     </GUI>
@@ -1064,7 +1146,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1280</xloc>
+      <xloc>1520</xloc>
       <yloc>128</yloc>
       <draw>Y</draw>
     </GUI>
@@ -1083,7 +1165,7 @@
     <fields>
       <field>
         <name>Brand</name>
-        <ascending>Y</ascending>
+        <ascending>N</ascending>
       </field>
       <field>
         <name>Model</name>
@@ -1097,10 +1179,6 @@
         <name>Type</name>
         <ascending>N</ascending>
       </field>
-      <field>
-        <name>Valid</name>
-        <ascending>N</ascending>
-      </field>
     </fields>
     <attributes/>
     <cluster_schema/>
@@ -1111,7 +1189,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1152</xloc>
+      <xloc>1392</xloc>
       <yloc>128</yloc>
       <draw>Y</draw>
     </GUI>
@@ -1210,73 +1288,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>640</xloc>
-      <yloc>144</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Unique rows</name>
-    <type>Unique</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <count_rows>N</count_rows>
-    <count_field/>
-    <reject_duplicate_row>N</reject_duplicate_row>
-    <error_description/>
-    <fields>      </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>1576</xloc>
-      <yloc>356</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Verify Duplicated Rows</name>
-    <type>Unique</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <count_rows>N</count_rows>
-    <count_field>Duplicated</count_field>
-    <reject_duplicate_row>Y</reject_duplicate_row>
-    <error_description>Duplicated License Plates</error_description>
-    <fields>
-      <field>
-        <name>LicensePlate</name>
-        <case_insensitive>N</case_insensitive>
-      </field>
-    </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>528</xloc>
-      <yloc>144</yloc>
+      <xloc>1024</xloc>
+      <yloc>304</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1305,7 +1318,7 @@
     <fileNameField/>
     <create_parent_folder>Y</create_parent_folder>
     <file>
-      <name>${Internal.Transformation.Filename.Directory}/valid</name>
+      <name>${Internal.Transformation.Filename.Directory}/resultados/valid</name>
       <servlet_output>N</servlet_output>
       <do_not_open_new_file_init>N</do_not_open_new_file_init>
       <extention>txt</extention>
@@ -1333,6 +1346,41 @@
     </remotesteps>
     <GUI>
       <xloc>400</xloc>
+      <yloc>144</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Verify Duplicated Rows</name>
+    <type>Unique</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <count_rows>Y</count_rows>
+    <count_field>Duplicated</count_field>
+    <reject_duplicate_row>Y</reject_duplicate_row>
+    <error_description>Duplicated License Plates</error_description>
+    <fields>
+      <field>
+        <name>LicensePlate</name>
+        <case_insensitive>Y</case_insensitive>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>640</xloc>
       <yloc>144</yloc>
       <draw>Y</draw>
     </GUI>
@@ -1378,14 +1426,14 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1376</xloc>
+      <xloc>1616</xloc>
       <yloc>128</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>Duplicated License Plates</name>
-    <type>TextFileOutput</type>
+    <name>Sort rows 2</name>
+    <type>SortRows</type>
     <description/>
     <distribute>Y</distribute>
     <custom_distribution/>
@@ -1394,37 +1442,22 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <separator>;</separator>
-    <enclosure>"</enclosure>
-    <enclosure_forced>N</enclosure_forced>
-    <enclosure_fix_disabled>N</enclosure_fix_disabled>
-    <header>Y</header>
-    <footer>N</footer>
-    <format>DOS</format>
-    <compression>None</compression>
-    <encoding/>
-    <endedLine/>
-    <fileNameInField>N</fileNameInField>
-    <fileNameField/>
-    <create_parent_folder>Y</create_parent_folder>
-    <file>
-      <name>${Internal.Transformation.Filename.Directory}/duplicated</name>
-      <servlet_output>N</servlet_output>
-      <do_not_open_new_file_init>N</do_not_open_new_file_init>
-      <extention>txt</extention>
-      <append>N</append>
-      <split>N</split>
-      <haspartno>N</haspartno>
-      <add_date>N</add_date>
-      <add_time>N</add_time>
-      <SpecifyFormat>N</SpecifyFormat>
-      <date_time_format/>
-      <add_to_result_filenames>Y</add_to_result_filenames>
-      <pad>N</pad>
-      <fast_dump>N</fast_dump>
-      <splitevery/>
-    </file>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>out</prefix>
+    <sort_size>1000000</sort_size>
+    <free_memory/>
+    <compress>N</compress>
+    <compress_variable/>
+    <unique_rows>N</unique_rows>
     <fields>
+      <field>
+        <name>LicensePlate</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
     </fields>
     <attributes/>
     <cluster_schema/>
@@ -1435,8 +1468,135 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>608</xloc>
-      <yloc>32</yloc>
+      <xloc>512</xloc>
+      <yloc>144</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Filter rows</name>
+    <type>FilterRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <send_true_to>Dummy (do nothing)</send_true_to>
+    <send_false_to>Duplicated License Plates</send_false_to>
+    <compare>
+      <condition>
+        <negated>N</negated>
+        <leftvalue>Duplicated</leftvalue>
+        <function>=</function>
+        <rightvalue/>
+        <value>
+          <name>constant</name>
+          <type>Integer</type>
+          <text>1</text>
+          <length>-1</length>
+          <precision>0</precision>
+          <isnull>N</isnull>
+          <mask>####0;-####0</mask>
+        </value>
+      </condition>
+    </compare>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>768</xloc>
+      <yloc>144</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Dummy (do nothing)</name>
+    <type>Dummy</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>768</xloc>
+      <yloc>304</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Select values</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <field>
+        <name>Brand</name>
+        <rename/>
+      </field>
+      <field>
+        <name>Model</name>
+        <rename/>
+      </field>
+      <field>
+        <name>LicensePlate</name>
+        <rename/>
+      </field>
+      <field>
+        <name>Type</name>
+        <rename/>
+      </field>
+      <field>
+        <name>Valid</name>
+        <rename/>
+      </field>
+      <field>
+        <name>Duplicated</name>
+        <rename/>
+      </field>
+      <select_unspecified>N</select_unspecified>
+      <remove>
+        <name>Valid</name>
+      </remove>
+      <remove>
+        <name>Duplicated</name>
+      </remove>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>896</xloc>
+      <yloc>304</yloc>
       <draw>Y</draw>
     </GUI>
   </step>

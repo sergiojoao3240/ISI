@@ -1,5 +1,0 @@
-Brand;Model;LicensePlate;Type;Valid
-Renault;Zoe   ;ZX-60-53;E               ;Y
-Toyota ;Prius ;79-AZ-43;E               ;Y
-Renault;Zoe   ;01-AA-25;E               ;Y
-Renault;Zoe   ;20-NM-53;E               ;Y

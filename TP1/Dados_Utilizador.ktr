@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <transformation>
   <info>
-    <name>tp_validar_dados</name>
+    <name>Dados_Utilizador</name>
     <description/>
     <extended_description/>
     <trans_version/>
@@ -12,9 +12,9 @@
     </parameters>
     <log>
       <trans-log-table>
-        <connection>logs</connection>
+        <connection/>
         <schema/>
-        <table>transformation</table>
+        <table/>
         <size_limit_lines/>
         <interval/>
         <timeout_days/>
@@ -126,9 +126,9 @@
         </field>
       </trans-log-table>
       <perf-log-table>
-        <connection>logs</connection>
+        <connection/>
         <schema/>
-        <table>performance</table>
+        <table/>
         <interval/>
         <timeout_days/>
         <field>
@@ -274,9 +274,9 @@
         </field>
       </channel-log-table>
       <step-log-table>
-        <connection>logs</connection>
+        <connection/>
         <schema/>
-        <table>step</table>
+        <table/>
         <timeout_days/>
         <field>
           <id>ID_BATCH</id>
@@ -350,9 +350,9 @@
         </field>
       </step-log-table>
       <metrics-log-table>
-        <connection>logs</connection>
+        <connection/>
         <schema/>
-        <table>metrics</table>
+        <table/>
         <timeout_days/>
         <field>
           <id>ID_BATCH</id>
@@ -436,65 +436,6 @@
   </info>
   <notepads>
   </notepads>
-  <connection>
-    <name>logs</name>
-    <server>localhost</server>
-    <type>MSSQLNATIVE</type>
-    <access>Native</access>
-    <database>logs</database>
-    <port>1433</port>
-    <username>paula</username>
-    <password>Encrypted 2be98afc86aa7f2e4bb18bb7cdfdcfd8f</password>
-    <servername/>
-    <data_tablespace/>
-    <index_tablespace/>
-    <attributes>
-      <attribute>
-        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
-        <attribute>N</attribute>
-      </attribute>
-      <attribute>
-        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
-        <attribute>N</attribute>
-      </attribute>
-      <attribute>
-        <code>IS_CLUSTERED</code>
-        <attribute>N</attribute>
-      </attribute>
-      <attribute>
-        <code>MSSQLUseIntegratedSecurity</code>
-        <attribute>false</attribute>
-      </attribute>
-      <attribute>
-        <code>MSSQL_DOUBLE_DECIMAL_SEPARATOR</code>
-        <attribute>N</attribute>
-      </attribute>
-      <attribute>
-        <code>PORT_NUMBER</code>
-        <attribute>1433</attribute>
-      </attribute>
-      <attribute>
-        <code>PRESERVE_RESERVED_WORD_CASE</code>
-        <attribute>Y</attribute>
-      </attribute>
-      <attribute>
-        <code>QUOTE_ALL_FIELDS</code>
-        <attribute>N</attribute>
-      </attribute>
-      <attribute>
-        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
-        <attribute>Y</attribute>
-      </attribute>
-      <attribute>
-        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
-        <attribute>Y</attribute>
-      </attribute>
-      <attribute>
-        <code>USE_POOLING</code>
-        <attribute>N</attribute>
-      </attribute>
-    </attributes>
-  </connection>
   <order>
     <hop>
       <from>validator NIF, CP4, CP3, contacto, numero, Rua</from>
@@ -608,7 +549,7 @@
     </hop>
     <hop>
       <from>Switch / case</from>
-      <to>OUTROS_utilizadores</to>
+      <to>Outros_utilizadores</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
@@ -624,6 +565,66 @@
     <hop>
       <from>modificar_genero</from>
       <to>Empresa_externa</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Outros_utilizadores</from>
+      <to>Outros_utilizadores 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Colaboradores</from>
+      <to>Colaboradores 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Alunos</from>
+      <to>Alunos 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Outros_utilizadores 2</from>
+      <to>Sorted merge NIFS</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Colaboradores 2</from>
+      <to>Sorted merge NIFS</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Alunos 2</from>
+      <to>Sorted merge NIFS</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Empresa_externa</from>
+      <to>Empresa_externa 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Empresa_externa 2</from>
+      <to>Sorted merge NIFS</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>NIFS</from>
+      <to>NIFS_Final</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Sorted merge NIFS</from>
+      <to>Dummy (do nothing)</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Dummy (do nothing)</from>
+      <to>Select values</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Select values</from>
+      <to>NIFS</to>
       <enabled>Y</enabled>
     </hop>
   </order>
@@ -836,7 +837,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1360</xloc>
+      <xloc>1408</xloc>
       <yloc>112</yloc>
       <draw>Y</draw>
     </GUI>
@@ -1020,7 +1021,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>48</xloc>
+      <xloc>32</xloc>
       <yloc>192</yloc>
       <draw>Y</draw>
     </GUI>
@@ -1291,7 +1292,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1360</xloc>
+      <xloc>1408</xloc>
       <yloc>240</yloc>
       <draw>Y</draw>
     </GUI>
@@ -1565,8 +1566,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>928</xloc>
-      <yloc>384</yloc>
+      <xloc>960</xloc>
+      <yloc>368</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1677,7 +1678,7 @@
     </GUI>
   </step>
   <step>
-    <name>OUTROS_utilizadores</name>
+    <name>Outros_utilizadores</name>
     <type>XMLOutput</type>
     <description/>
     <distribute>Y</distribute>
@@ -1925,7 +1926,7 @@
       </case>
       <case>
         <value>outros</value>
-        <target_step>OUTROS_utilizadores</target_step>
+        <target_step>Outros_utilizadores</target_step>
       </case>
     </cases>
     <attributes/>
@@ -2043,8 +2044,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>176</xloc>
-      <yloc>192</yloc>
+      <xloc>160</xloc>
+      <yloc>176</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -2200,7 +2201,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1232</xloc>
+      <xloc>1280</xloc>
       <yloc>160</yloc>
       <draw>Y</draw>
     </GUI>
@@ -2225,7 +2226,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1120</xloc>
+      <xloc>1168</xloc>
       <yloc>176</yloc>
       <draw>Y</draw>
     </GUI>
@@ -2423,6 +2424,1084 @@
     <GUI>
       <xloc>128</xloc>
       <yloc>304</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Outros_utilizadores 2</name>
+    <type>TextFileOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <separator>;</separator>
+    <enclosure>"</enclosure>
+    <enclosure_forced>N</enclosure_forced>
+    <enclosure_fix_disabled>N</enclosure_fix_disabled>
+    <header>Y</header>
+    <footer>N</footer>
+    <format>DOS</format>
+    <compression>None</compression>
+    <encoding/>
+    <endedLine/>
+    <fileNameInField>N</fileNameInField>
+    <fileNameField/>
+    <create_parent_folder>Y</create_parent_folder>
+    <file>
+      <name>file</name>
+      <servlet_output>N</servlet_output>
+      <do_not_open_new_file_init>N</do_not_open_new_file_init>
+      <extention>txt</extention>
+      <append>N</append>
+      <split>N</split>
+      <haspartno>N</haspartno>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <SpecifyFormat>N</SpecifyFormat>
+      <date_time_format/>
+      <add_to_result_filenames>Y</add_to_result_filenames>
+      <pad>N</pad>
+      <fast_dump>N</fast_dump>
+      <splitevery/>
+    </file>
+    <fields>
+      <field>
+        <name>﻿numero</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>€</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>3</length>
+        <precision>0</precision>
+      </field>
+      <field>
+        <name>Nome</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>42</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>CP4</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>€</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>4</length>
+        <precision>0</precision>
+      </field>
+      <field>
+        <name>CP3</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>€</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>3</length>
+        <precision>0</precision>
+      </field>
+      <field>
+        <name>Rua</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>39</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>contacto</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>€</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>9</length>
+        <precision>0</precision>
+      </field>
+      <field>
+        <name>NIF</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>€</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>9</length>
+        <precision>0</precision>
+      </field>
+      <field>
+        <name>email</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>13</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>DataNasc</name>
+        <type>Date</type>
+        <format>dd/MM/yyyy</format>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>genero</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>6</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>tipo</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>15</length>
+        <precision>-1</precision>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>832</xloc>
+      <yloc>544</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Colaboradores 2</name>
+    <type>TextFileOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <separator>;</separator>
+    <enclosure>"</enclosure>
+    <enclosure_forced>N</enclosure_forced>
+    <enclosure_fix_disabled>N</enclosure_fix_disabled>
+    <header>Y</header>
+    <footer>N</footer>
+    <format>DOS</format>
+    <compression>None</compression>
+    <encoding/>
+    <endedLine/>
+    <fileNameInField>N</fileNameInField>
+    <fileNameField/>
+    <create_parent_folder>Y</create_parent_folder>
+    <file>
+      <name>file</name>
+      <servlet_output>N</servlet_output>
+      <do_not_open_new_file_init>N</do_not_open_new_file_init>
+      <extention>txt</extention>
+      <append>N</append>
+      <split>N</split>
+      <haspartno>N</haspartno>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <SpecifyFormat>N</SpecifyFormat>
+      <date_time_format/>
+      <add_to_result_filenames>Y</add_to_result_filenames>
+      <pad>N</pad>
+      <fast_dump>N</fast_dump>
+      <splitevery/>
+    </file>
+    <fields>
+      <field>
+        <name>﻿numero</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>€</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>3</length>
+        <precision>0</precision>
+      </field>
+      <field>
+        <name>Nome</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>42</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>CP4</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>€</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>4</length>
+        <precision>0</precision>
+      </field>
+      <field>
+        <name>CP3</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>€</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>4</length>
+        <precision>0</precision>
+      </field>
+      <field>
+        <name>Rua</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>39</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>contacto</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>€</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>9</length>
+        <precision>0</precision>
+      </field>
+      <field>
+        <name>NIF</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>€</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>9</length>
+        <precision>0</precision>
+      </field>
+      <field>
+        <name>email</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>13</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>DataNasc</name>
+        <type>Date</type>
+        <format>dd/MM/yyyy</format>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>genero</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>6</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>tipo</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>15</length>
+        <precision>-1</precision>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1408</xloc>
+      <yloc>368</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Alunos 2</name>
+    <type>TextFileOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <separator>;</separator>
+    <enclosure>"</enclosure>
+    <enclosure_forced>N</enclosure_forced>
+    <enclosure_fix_disabled>N</enclosure_fix_disabled>
+    <header>Y</header>
+    <footer>N</footer>
+    <format>DOS</format>
+    <compression>None</compression>
+    <encoding/>
+    <endedLine/>
+    <fileNameInField>N</fileNameInField>
+    <fileNameField/>
+    <create_parent_folder>Y</create_parent_folder>
+    <file>
+      <name>file</name>
+      <servlet_output>N</servlet_output>
+      <do_not_open_new_file_init>N</do_not_open_new_file_init>
+      <extention>txt</extention>
+      <append>N</append>
+      <split>N</split>
+      <haspartno>N</haspartno>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <SpecifyFormat>N</SpecifyFormat>
+      <date_time_format/>
+      <add_to_result_filenames>Y</add_to_result_filenames>
+      <pad>N</pad>
+      <fast_dump>N</fast_dump>
+      <splitevery/>
+    </file>
+    <fields>
+      <field>
+        <name>﻿numero</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>€</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>3</length>
+        <precision>0</precision>
+      </field>
+      <field>
+        <name>Nome</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>42</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>CP4</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>€</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>4</length>
+        <precision>0</precision>
+      </field>
+      <field>
+        <name>CP3</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>€</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>3</length>
+        <precision>0</precision>
+      </field>
+      <field>
+        <name>Rua</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>39</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>contacto</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>€</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>9</length>
+        <precision>0</precision>
+      </field>
+      <field>
+        <name>NIF</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>€</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>9</length>
+        <precision>0</precision>
+      </field>
+      <field>
+        <name>email</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>13</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>DataNasc</name>
+        <type>Date</type>
+        <format>dd/MM/yyyy</format>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>11</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>genero</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>6</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>tipo</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>15</length>
+        <precision>-1</precision>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1552</xloc>
+      <yloc>112</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Sorted merge NIFS</name>
+    <type>SortedMerge</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <field>
+        <name>﻿numero</name>
+        <ascending>N</ascending>
+      </field>
+      <field>
+        <name>Nome</name>
+        <ascending>N</ascending>
+      </field>
+      <field>
+        <name>CP4</name>
+        <ascending>N</ascending>
+      </field>
+      <field>
+        <name>CP3</name>
+        <ascending>N</ascending>
+      </field>
+      <field>
+        <name>Rua</name>
+        <ascending>N</ascending>
+      </field>
+      <field>
+        <name>contacto</name>
+        <ascending>N</ascending>
+      </field>
+      <field>
+        <name>NIF</name>
+        <ascending>N</ascending>
+      </field>
+      <field>
+        <name>email</name>
+        <ascending>N</ascending>
+      </field>
+      <field>
+        <name>DataNasc</name>
+        <ascending>N</ascending>
+      </field>
+      <field>
+        <name>genero</name>
+        <ascending>N</ascending>
+      </field>
+      <field>
+        <name>tipo</name>
+        <ascending>N</ascending>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1536</xloc>
+      <yloc>560</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Empresa_externa 2</name>
+    <type>TextFileOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <separator>;</separator>
+    <enclosure>"</enclosure>
+    <enclosure_forced>N</enclosure_forced>
+    <enclosure_fix_disabled>N</enclosure_fix_disabled>
+    <header>Y</header>
+    <footer>N</footer>
+    <format>DOS</format>
+    <compression>None</compression>
+    <encoding/>
+    <endedLine/>
+    <fileNameInField>N</fileNameInField>
+    <fileNameField/>
+    <create_parent_folder>Y</create_parent_folder>
+    <file>
+      <name>file</name>
+      <servlet_output>N</servlet_output>
+      <do_not_open_new_file_init>N</do_not_open_new_file_init>
+      <extention>txt</extention>
+      <append>N</append>
+      <split>N</split>
+      <haspartno>N</haspartno>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <SpecifyFormat>N</SpecifyFormat>
+      <date_time_format/>
+      <add_to_result_filenames>Y</add_to_result_filenames>
+      <pad>N</pad>
+      <fast_dump>N</fast_dump>
+      <splitevery/>
+    </file>
+    <fields>
+      <field>
+        <name>﻿numero</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>€</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>3</length>
+        <precision>0</precision>
+      </field>
+      <field>
+        <name>Nome</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>42</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>CP4</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>€</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>4</length>
+        <precision>0</precision>
+      </field>
+      <field>
+        <name>CP3</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>€</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>3</length>
+        <precision>0</precision>
+      </field>
+      <field>
+        <name>Rua</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>39</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>contacto</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>€</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>9</length>
+        <precision>0</precision>
+      </field>
+      <field>
+        <name>NIF</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>€</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>9</length>
+        <precision>0</precision>
+      </field>
+      <field>
+        <name>email</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>13</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>DataNasc</name>
+        <type>Date</type>
+        <format>dd/MM/yyyy</format>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>genero</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>6</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>tipo</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>15</length>
+        <precision>-1</precision>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>960</xloc>
+      <yloc>688</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>NIFS</name>
+    <type>TextFileOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <separator>;</separator>
+    <enclosure>"</enclosure>
+    <enclosure_forced>N</enclosure_forced>
+    <enclosure_fix_disabled>N</enclosure_fix_disabled>
+    <header>Y</header>
+    <footer>N</footer>
+    <format>DOS</format>
+    <compression>None</compression>
+    <encoding/>
+    <endedLine/>
+    <fileNameInField>N</fileNameInField>
+    <fileNameField/>
+    <create_parent_folder>Y</create_parent_folder>
+    <file>
+      <name>file</name>
+      <servlet_output>N</servlet_output>
+      <do_not_open_new_file_init>N</do_not_open_new_file_init>
+      <extention>txt</extention>
+      <append>N</append>
+      <split>N</split>
+      <haspartno>N</haspartno>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <SpecifyFormat>N</SpecifyFormat>
+      <date_time_format/>
+      <add_to_result_filenames>Y</add_to_result_filenames>
+      <pad>N</pad>
+      <fast_dump>N</fast_dump>
+      <splitevery/>
+    </file>
+    <fields>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1664</xloc>
+      <yloc>576</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>NIFS_Final</name>
+    <type>ExcelOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <header>Y</header>
+    <footer>N</footer>
+    <encoding/>
+    <append>N</append>
+    <add_to_result_filenames>Y</add_to_result_filenames>
+    <file>
+      <name>${Internal.Transformation.Filename.Directory}/resultados/NIFS</name>
+      <extention>xls</extention>
+      <do_not_open_newfile_init>N</do_not_open_newfile_init>
+      <create_parent_folder>N</create_parent_folder>
+      <split>N</split>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <SpecifyFormat>N</SpecifyFormat>
+      <date_time_format/>
+      <sheetname>Sheet1</sheetname>
+      <autosizecolums>N</autosizecolums>
+      <nullisblank>N</nullisblank>
+      <protect_sheet>N</protect_sheet>
+      <password>Encrypted </password>
+      <splitevery>0</splitevery>
+      <usetempfiles>N</usetempfiles>
+      <tempdirectory/>
+    </file>
+    <template>
+      <enabled>N</enabled>
+      <append>N</append>
+      <filename>template.xls</filename>
+    </template>
+    <fields>
+    </fields>
+    <custom>
+      <header_font_name>arial</header_font_name>
+      <header_font_size>10</header_font_size>
+      <header_font_bold>N</header_font_bold>
+      <header_font_italic>N</header_font_italic>
+      <header_font_underline>no</header_font_underline>
+      <header_font_orientation>horizontal</header_font_orientation>
+      <header_font_color>black</header_font_color>
+      <header_background_color>none</header_background_color>
+      <header_row_height>255</header_row_height>
+      <header_alignment>left</header_alignment>
+      <header_image/>
+      <row_font_name>arial</row_font_name>
+      <row_font_size>10</row_font_size>
+      <row_font_color>black</row_font_color>
+      <row_background_color>none</row_background_color>
+    </custom>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1664</xloc>
+      <yloc>448</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Dummy (do nothing)</name>
+    <type>Dummy</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1536</xloc>
+      <yloc>688</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Select values</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <field>
+        <name>﻿numero</name>
+        <rename/>
+      </field>
+      <field>
+        <name>Nome</name>
+        <rename/>
+      </field>
+      <field>
+        <name>CP4</name>
+        <rename/>
+      </field>
+      <field>
+        <name>CP3</name>
+        <rename/>
+      </field>
+      <field>
+        <name>Rua</name>
+        <rename/>
+      </field>
+      <field>
+        <name>contacto</name>
+        <rename/>
+      </field>
+      <field>
+        <name>NIF</name>
+        <rename/>
+      </field>
+      <field>
+        <name>email</name>
+        <rename/>
+      </field>
+      <field>
+        <name>DataNasc</name>
+        <rename/>
+      </field>
+      <field>
+        <name>genero</name>
+        <rename/>
+      </field>
+      <field>
+        <name>tipo</name>
+        <rename/>
+      </field>
+      <select_unspecified>N</select_unspecified>
+      <remove>
+        <name>CP4</name>
+      </remove>
+      <remove>
+        <name>CP3</name>
+      </remove>
+      <remove>
+        <name>Rua</name>
+      </remove>
+      <remove>
+        <name>contacto</name>
+      </remove>
+      <remove>
+        <name>email</name>
+      </remove>
+      <remove>
+        <name>DataNasc</name>
+      </remove>
+      <remove>
+        <name>genero</name>
+      </remove>
+      <remove>
+        <name>tipo</name>
+      </remove>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1664</xloc>
+      <yloc>688</yloc>
       <draw>Y</draw>
     </GUI>
   </step>

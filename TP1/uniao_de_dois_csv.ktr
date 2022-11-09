@@ -12,9 +12,9 @@
     </parameters>
     <log>
       <trans-log-table>
-        <connection>ISI</connection>
+        <connection/>
         <schema/>
-        <table>tranf2</table>
+        <table/>
         <size_limit_lines/>
         <interval/>
         <timeout_days/>
@@ -436,65 +436,6 @@
   </info>
   <notepads>
   </notepads>
-  <connection>
-    <name>ISI</name>
-    <server>localhost</server>
-    <type>MSSQLNATIVE</type>
-    <access>Native</access>
-    <database>ISI</database>
-    <port>1433</port>
-    <username>paula</username>
-    <password>Encrypted 2be98afc86aa7f2e4bb18bb7cdfdcfd8f</password>
-    <servername/>
-    <data_tablespace/>
-    <index_tablespace/>
-    <attributes>
-      <attribute>
-        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
-        <attribute>N</attribute>
-      </attribute>
-      <attribute>
-        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
-        <attribute>N</attribute>
-      </attribute>
-      <attribute>
-        <code>IS_CLUSTERED</code>
-        <attribute>N</attribute>
-      </attribute>
-      <attribute>
-        <code>MSSQLUseIntegratedSecurity</code>
-        <attribute>false</attribute>
-      </attribute>
-      <attribute>
-        <code>MSSQL_DOUBLE_DECIMAL_SEPARATOR</code>
-        <attribute>N</attribute>
-      </attribute>
-      <attribute>
-        <code>PORT_NUMBER</code>
-        <attribute>1433</attribute>
-      </attribute>
-      <attribute>
-        <code>PRESERVE_RESERVED_WORD_CASE</code>
-        <attribute>Y</attribute>
-      </attribute>
-      <attribute>
-        <code>QUOTE_ALL_FIELDS</code>
-        <attribute>N</attribute>
-      </attribute>
-      <attribute>
-        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
-        <attribute>Y</attribute>
-      </attribute>
-      <attribute>
-        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
-        <attribute>Y</attribute>
-      </attribute>
-      <attribute>
-        <code>USE_POOLING</code>
-        <attribute>N</attribute>
-      </attribute>
-    </attributes>
-  </connection>
   <order>
     <hop>
       <from>dados</from>
@@ -523,7 +464,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <directory>C:\3ano_ISI\1TP</directory>
+    <directory/>
     <prefix>txt</prefix>
     <cache_size>20000</cache_size>
     <main>dados</main>
@@ -736,7 +677,7 @@
     <fileNameField/>
     <create_parent_folder>Y</create_parent_folder>
     <file>
-      <name>${Internal.Transformation.Filename.Directory}/dados_juntos</name>
+      <name>${Internal.Transformation.Filename.Directory}/resultados/dados_juntos</name>
       <servlet_output>N</servlet_output>
       <do_not_open_new_file_init>N</do_not_open_new_file_init>
       <extention>txt</extention>
