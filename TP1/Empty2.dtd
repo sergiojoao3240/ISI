@@ -13,3 +13,5 @@
 <!ELEMENT hora (#PCDATA)>
 
 <!ELEMENT matricula (#PCDATA)>
+
+<!ELEMENT result (#PCDATA)>
