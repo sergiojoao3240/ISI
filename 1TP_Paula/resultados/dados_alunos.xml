@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<alunos>
+<aluno><numero> 025</numero> <nome>António Silva</nome> <cp4> 4308</cp4> <cp3> 120</cp3> <rua>Rua da Barroca</rua> <contacto> 911493992</contacto> <nif> 274542330</nif> <email>puwif@ipca.pt</email> <datanasc>1997/10/17 00:00:00.000</datanasc> <genero>M</genero> <tipo>aluno</tipo></aluno>
+<aluno><numero> 037</numero> <nome>Maria Oliveira</nome> <cp4> 4334</cp4> <cp3> 300</cp3> <rua>Rua da Cruz</rua> <contacto> 912872965</contacto> <nif> 233668847</nif> <email>tufur@ipca.pt</email> <datanasc>1951/04/01 00:00:00.000</datanasc> <genero>F</genero> <tipo>aluno</tipo></aluno>
+</alunos>

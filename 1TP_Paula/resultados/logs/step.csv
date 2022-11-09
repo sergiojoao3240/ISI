@@ -1,0 +1,25 @@
+﻿1;e81d59bf-2b97-4b42-834f-cc0d69cebbb5;2022-11-06 15:22:41.847;tp_validar_dados23;CSV file input;0;0;61;0;62;0;0;0
+1;ad001aa9-8281-45c6-b9da-c4a02891e3e0;2022-11-06 15:22:41.857;tp_validar_dados23;validator NIF, CP4, CP3, contacto, numero, Rua;0;61;30;0;0;0;31;0
+1;30b84529-7e29-4289-a5a1-f1d8baecc0f4;2022-11-06 15:22:41.860;tp_validar_dados23;dados_numericos_validos;0;30;30;0;0;0;0;0
+1;a5a2ca30-7360-424d-a129-86b3a435032f;2022-11-06 15:22:41.860;tp_validar_dados23;Mail validator;0;30;30;0;0;0;0;0
+1;2eaf8a89-ff17-47dd-99c4-491df4d44891;2022-11-06 15:22:41.863;tp_validar_dados23;Filtar email;0;30;30;0;0;0;0;0
+1;cf9faa9d-3df0-43b7-b399-4cc267b94144;2022-11-06 15:22:41.867;tp_validar_dados23;Regex evaluation email;0;0;0;0;0;0;0;0
+1;7a6d2cb9-2ab8-4fe7-b8bb-f08dc3005f28;2022-11-06 15:22:41.867;tp_validar_dados23;email validos;0;28;28;0;0;0;0;0
+1;f4a97c6d-0091-44f6-8f9c-7db51e87db5c;2022-11-06 15:22:41.867;tp_validar_dados23;Elinimar duas colunas;0;28;28;0;0;0;0;0
+1;eb3d6b96-cabd-428c-94b2-2b21fba85711;2022-11-06 15:22:41.870;tp_validar_dados23;Switch / case;0;28;28;0;0;0;0;0
+1;df04f587-1da8-42ae-a2f8-64ede05f3aa3;2022-11-06 15:22:41.873;tp_validar_dados23;Aluno;0;12;12;0;0;0;0;0
+1;b3c7fcbc-9370-42f5-9866-364fd44002ef;2022-11-06 15:22:41.887;tp_validar_dados23;Colaborador;0;9;9;0;0;0;0;0
+1;8e7db55d-c19c-46cf-9cf6-5fab07be0c8e;2022-11-06 15:22:41.890;tp_validar_dados23;Empresa_externa;0;5;5;0;0;5;0;0
+1;56edbb87-debd-46c5-9e0a-e1ba9ef7b4e5;2022-11-06 15:22:41.893;tp_validar_dados23;email invalidos;0;2;2;0;0;0;0;0
+1;98dccc02-4afe-49b6-a83b-abfa76dfdc16;2022-11-06 15:22:41.897;tp_validar_dados23;dados_incompletos;0;31;31;0;0;0;0;0
+1;a6391fed-2303-45bb-9058-6f8fce67b78f;2022-11-06 15:22:41.900;tp_validar_dados23;OUTROS_utilizadores;0;2;2;0;0;2;0;0
+1;493245db-65ef-4ee1-bd92-7d689f32cf97;2022-11-06 15:22:41.903;tp_validar_dados23;Validador de nomes_EXP_regular;0;21;20;0;0;0;1;0
+1;773bef13-6f48-4a80-a1a6-7ebf0dc6058f;2022-11-06 15:22:41.903;tp_validar_dados23;nomes_incorretos;0;1;1;0;0;0;0;0
+1;eb4851a0-b585-421e-9189-b226052dff34;2022-11-06 15:22:41.907;tp_validar_dados23;utilizadores da instituição;0;20;20;0;0;0;0;0
+1;14d735ab-b154-4594-a80b-8306d5ab7008;2022-11-06 15:22:41.910;tp_validar_dados23;Filter rows 2;0;20;20;0;0;0;0;0
+1;fb4373b6-3b0c-45a1-a15d-ed16e3ff30b4;2022-11-06 15:22:41.910;tp_validar_dados23;Sorted merge;0;34;34;0;0;0;0;0
+1;256a149e-5802-4608-a04f-cf7c97c9c5e6;2022-11-06 15:22:41.913;tp_validar_dados23;Colaboradores;0;8;8;0;0;8;0;0
+1;47054bac-f7fd-4fc1-8203-bdd363976eee;2022-11-06 15:22:41.917;tp_validar_dados23;Filter rows;0;0;0;0;0;0;0;0
+1;d1d962a4-855f-46a7-83ee-ad7f03bd1d23;2022-11-06 15:22:41.920;tp_validar_dados23;Regex evaluation nome;0;0;0;0;0;0;0;0
+1;2345ce39-b685-4f25-983a-e22b33f30605;2022-11-06 15:22:41.920;tp_validar_dados23;Campos_dados_invalidos;0;34;34;0;0;35;0;0
+1;ee97189b-eee9-49bd-9078-d5f2236011d9;2022-11-06 15:22:41.923;tp_validar_dados23;Alunos;0;12;12;0;0;12;0;0
