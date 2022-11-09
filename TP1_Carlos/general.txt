@@ -1,0 +1,4 @@
+Brand;Model;LicensePlate;Type;Valid
+BMW    ;X3    ;FG-CF-48;G               ;Y
+Ford   ;Fiesta;AB-CD-01;G               ;Y
+Fiat   ;Punto ;50-25-BJ;G               ;Y
