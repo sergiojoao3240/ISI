@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<Parque>
+<Estacionamento><setor> 02</setor> <lugar> 002</lugar> <estado> 0</estado> <dia> 01112022</dia> <hora> 1141</hora> <matricula>-0-</matricula></Estacionamento>
+<Estacionamento><setor> 02</setor> <lugar> 003</lugar> <estado> 0</estado> <dia> 01112022</dia> <hora> 1151</hora> <matricula>-0-</matricula></Estacionamento>
+<Estacionamento><setor> 01</setor> <lugar> 002</lugar> <estado> 0</estado> <dia> 01112022</dia> <hora> 1021</hora> <matricula>-0-</matricula></Estacionamento>
+<Estacionamento><setor> 01</setor> <lugar> 001</lugar> <estado> 0</estado> <dia> 01112022</dia> <hora> 1021</hora> <matricula>-0-</matricula></Estacionamento>
+<Estacionamento><setor> 01</setor> <lugar> 003</lugar> <estado> 0</estado> <dia> 01112022</dia> <hora> 1021</hora> <matricula>-0-</matricula></Estacionamento>
+<Estacionamento><setor> 01</setor> <lugar> 004</lugar> <estado> 0</estado> <dia> 01112022</dia> <hora> 1121</hora> <matricula>-0-</matricula></Estacionamento>
+<Estacionamento><setor> 02</setor> <lugar> 001</lugar> <estado> 0</estado> <dia> 01112022</dia> <hora> 1021</hora> <matricula>-0-</matricula></Estacionamento>
+<Estacionamento><setor> 02</setor> <lugar> 004</lugar> <estado> 0</estado> <dia> 01112022</dia> <hora> 1021</hora> <matricula>-0-</matricula></Estacionamento>
+<Estacionamento><setor> 02</setor> <lugar> 005</lugar> <estado> 0</estado> <dia> 01112022</dia> <hora> 1021</hora> <matricula>-0-</matricula></Estacionamento>
+</Parque>
