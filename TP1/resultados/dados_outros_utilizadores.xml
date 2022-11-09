@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<outrosUtilizadores>
+<outroUtilizador><numero> 037</numero> <nome>Sandrina Cunha</nome> <cp4> 4390</cp4> <cp3> 120</cp3> <rua>Rua Porto Carreiro</rua> <contacto> 913437634</contacto> <nif> 295936604</nif> <email>wipom@ipca.pt</email> <datanasc>1985/01/25 00:00:00.000</datanasc> <genero>F</genero> <tipo>outros</tipo></outroUtilizador>
+<outroUtilizador><numero> 047</numero> <nome>Limp Lar</nome> <cp4> 3960</cp4> <cp3> 111</cp3> <rua>Travessia do Calvário</rua> <contacto> 965419916</contacto> <nif> 518223052</nif> <email>bibid@ipca.pt</email> <datanasc/> <genero>-</genero> <tipo>outros</tipo></outroUtilizador>
+</outrosUtilizadores>

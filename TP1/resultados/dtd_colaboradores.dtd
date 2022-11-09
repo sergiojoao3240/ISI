@@ -1,0 +1,22 @@
+<!DOCTYPE note
+[
+<!-- Declaracao de elementos -->
+
+<!ELEMENT colaboradores (colaborador)>
+<!ELEMENT colaborador (numero, nome, cp4, cp3, rua, contacto, nif, email, datanasc, genero, tipo)>
+
+
+<!-- Declaração de tipos de elementos -->
+
+<!ELEMENT numero (#PCDATA)> 
+<!ELEMENT nome (#PCDATA)> 
+<!ELEMENT cp4 (#PCDATA)> 
+<!ELEMENT cp3 (#PCDATA)> 
+<!ELEMENT rua (#PCDATA)> 
+<!ELEMENT contacto (#PCDATA)> 
+<!ELEMENT nif (#PCDATA)> 
+<!ELEMENT email (#PCDATA)> 
+<!ELEMENT datanasc (#PCDATA)> 
+<!ELEMENT genero (#PCDATA)> 
+<!ELEMENT tipo (#PCDATA)> 
+]>
