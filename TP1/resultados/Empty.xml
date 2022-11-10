@@ -2,6 +2,8 @@
 <Parque>
 <Estacionamento><setor> 02</setor> <lugar> 002</lugar> <estado> 0</estado> <dia> 01112022</dia> <hora> 1141</hora> <matricula>-0-</matricula></Estacionamento>
 <Estacionamento><setor> 02</setor> <lugar> 003</lugar> <estado> 0</estado> <dia> 01112022</dia> <hora> 1151</hora> <matricula>-0-</matricula></Estacionamento>
+<Estacionamento><setor> 02</setor> <lugar> 007</lugar> <estado> 0</estado> <dia> 30112022</dia> <hora> 1423</hora> <matricula>-0-</matricula></Estacionamento>
+<Estacionamento><setor> 01</setor> <lugar> 002</lugar> <estado> 0</estado> <dia> 23102022</dia> <hora> 1213</hora> <matricula>-0-</matricula></Estacionamento>
 <Estacionamento><setor> 01</setor> <lugar> 002</lugar> <estado> 0</estado> <dia> 01112022</dia> <hora> 1021</hora> <matricula>-0-</matricula></Estacionamento>
 <Estacionamento><setor> 01</setor> <lugar> 001</lugar> <estado> 0</estado> <dia> 01112022</dia> <hora> 1021</hora> <matricula>-0-</matricula></Estacionamento>
 <Estacionamento><setor> 01</setor> <lugar> 003</lugar> <estado> 0</estado> <dia> 01112022</dia> <hora> 1021</hora> <matricula>-0-</matricula></Estacionamento>
@@ -9,4 +11,13 @@
 <Estacionamento><setor> 02</setor> <lugar> 001</lugar> <estado> 0</estado> <dia> 01112022</dia> <hora> 1021</hora> <matricula>-0-</matricula></Estacionamento>
 <Estacionamento><setor> 02</setor> <lugar> 004</lugar> <estado> 0</estado> <dia> 01112022</dia> <hora> 1021</hora> <matricula>-0-</matricula></Estacionamento>
 <Estacionamento><setor> 02</setor> <lugar> 005</lugar> <estado> 0</estado> <dia> 01112022</dia> <hora> 1021</hora> <matricula>-0-</matricula></Estacionamento>
+<Estacionamento><setor> 01</setor> <lugar> 006</lugar> <estado> 0</estado> <dia> 13122022</dia> <hora> 1253</hora> <matricula>-0-</matricula></Estacionamento>
+<Estacionamento><setor> 01</setor> <lugar> 007</lugar> <estado> 0</estado> <dia> 12032022</dia> <hora> 1932</hora> <matricula>-0-</matricula></Estacionamento>
+<Estacionamento><setor> 02</setor> <lugar> 009</lugar> <estado> 0</estado> <dia> 16122022</dia> <hora> 0823</hora> <matricula>-0-</matricula></Estacionamento>
+<Estacionamento><setor> 02</setor> <lugar> 008</lugar> <estado> 0</estado> <dia> 22122022</dia> <hora> 1222</hora> <matricula>-0-</matricula></Estacionamento>
+<Estacionamento><setor> 02</setor> <lugar> 006</lugar> <estado> 0</estado> <dia> 23112022</dia> <hora> 1233</hora> <matricula>-0-</matricula></Estacionamento>
+<Estacionamento><setor> 02</setor> <lugar> 002</lugar> <estado> 0</estado> <dia> 29112022</dia> <hora> 1123</hora> <matricula>-0-</matricula></Estacionamento>
+<Estacionamento><setor> 02</setor> <lugar> 005</lugar> <estado> 0</estado> <dia> 23112022</dia> <hora> 1213</hora> <matricula>-0-</matricula></Estacionamento>
+<Estacionamento><setor> 01</setor> <lugar> 008</lugar> <estado> 0</estado> <dia> 30112022</dia> <hora> 1330</hora> <matricula>-0-</matricula></Estacionamento>
+<Estacionamento><setor> 02</setor> <lugar> 004</lugar> <estado> 0</estado> <dia> 13112022</dia> <hora> 1033</hora> <matricula>-0-</matricula></Estacionamento>
 </Parque>
