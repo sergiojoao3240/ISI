@@ -315,7 +315,7 @@
       <attributes/>
       <specification_method>filename</specification_method>
       <trans_object_id/>
-      <filename>C:/3ano_ISI/1TP/uniao_de_dois_csv.ktr</filename>
+      <filename>C:/3ano_ISI/1TP/tp_validar_dados.ktr</filename>
       <transname/>
       <arg_from_previous>N</arg_from_previous>
       <params_from_previous>N</params_from_previous>
@@ -344,7 +344,7 @@
       <draw>Y</draw>
       <nr>0</nr>
       <xloc>400</xloc>
-      <yloc>240</yloc>
+      <yloc>224</yloc>
       <attributes_kjc/>
     </entry>
     <entry>
