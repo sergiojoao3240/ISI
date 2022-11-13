@@ -382,7 +382,7 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>736</xloc>
+      <xloc>592</xloc>
       <yloc>240</yloc>
       <attributes_kjc/>
     </entry>
@@ -394,8 +394,23 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>960</xloc>
+      <xloc>736</xloc>
       <yloc>240</yloc>
+      <attributes_kjc/>
+    </entry>
+    <entry>
+      <name>Create file</name>
+      <description/>
+      <type>CREATE_FILE</type>
+      <attributes/>
+      <filename/>
+      <fail_if_file_exists>Y</fail_if_file_exists>
+      <add_filename_result>N</add_filename_result>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>480</xloc>
+      <yloc>160</yloc>
       <attributes_kjc/>
     </entry>
   </entries>
@@ -420,7 +435,7 @@
     </hop>
     <hop>
       <from>Transformation</from>
-      <to>Transformation 2</to>
+      <to>Create file</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
       <enabled>Y</enabled>
