@@ -1,3 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <empresas>
+<empresa><numero> 067</numero> <nome>Brilho e Lustro</nome> <cp4> 4490</cp4> <cp3> 160</cp3> <rua>Travessa do Couto</rua> <contacto> 969699982</contacto> <nif> 519824273</nif> <email>fatak@ipca.pt</email> <datanasc/> <genero>outro</genero> <tipo>empresa_externa</tipo></empresa>
+<empresa><numero> 041</numero> <nome>Dona Faxina</nome> <cp4> 3805</cp4> <cp3> 512</cp3> <rua>Travessa do Souto</rua> <contacto> 969338557</contacto> <nif> 506916984</nif> <email>tofon@ipca.pt</email> <datanasc/> <genero>outro</genero> <tipo>empresa_externa</tipo></empresa>
+<empresa><numero> 013</numero> <nome>Safe Protect</nome> <cp4> 4209</cp4> <cp3> 300</cp3> <rua>Avenida Carreira da Torre</rua> <contacto> 966115900</contacto> <nif> 525559061</nif> <email>kisif@ipca.pt</email> <datanasc/> <genero>outro</genero> <tipo>empresa_externa</tipo></empresa>
+<empresa><numero> 059</numero> <nome>Serviço de restauração do Cloud Nine Flood</nome> <cp4> 4041</cp4> <cp3> 123</cp3> <rua>Avenida do Casal</rua> <contacto> 929886823</contacto> <nif> 525377601</nif> <email>nabug@ipca.pt</email> <datanasc/> <genero>outro</genero> <tipo>empresa_externa</tipo></empresa>
+<empresa><numero> 014</numero> <nome>Restauração de água americana</nome> <cp4> 4641</cp4> <cp3> 451</cp3> <rua>Calçada da Cruz</rua> <contacto> 925439333</contacto> <nif> 528231756</nif> <email>nunoz@ipca.pt</email> <datanasc/> <genero>outro</genero> <tipo>empresa_externa</tipo></empresa>
 </empresas>
