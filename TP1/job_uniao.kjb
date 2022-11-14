@@ -304,7 +304,7 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>240</xloc>
+      <xloc>288</xloc>
       <yloc>240</yloc>
       <attributes_kjc/>
     </entry>
@@ -315,7 +315,7 @@
       <attributes/>
       <specification_method>filename</specification_method>
       <trans_object_id/>
-      <filename>C:/3ano_ISI/1TP/tp_validar_dados.ktr</filename>
+      <filename>C:/3ano_ISI/1TP/uniao_de_dois_csv.ktr</filename>
       <transname/>
       <arg_from_previous>N</arg_from_previous>
       <params_from_previous>N</params_from_previous>
@@ -344,7 +344,7 @@
       <draw>Y</draw>
       <nr>0</nr>
       <xloc>400</xloc>
-      <yloc>224</yloc>
+      <yloc>240</yloc>
       <attributes_kjc/>
     </entry>
     <entry>
@@ -382,7 +382,7 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>736</xloc>
+      <xloc>512</xloc>
       <yloc>240</yloc>
       <attributes_kjc/>
     </entry>
@@ -394,7 +394,7 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>960</xloc>
+      <xloc>640</xloc>
       <yloc>240</yloc>
       <attributes_kjc/>
     </entry>
