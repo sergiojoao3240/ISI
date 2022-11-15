@@ -315,7 +315,7 @@
       <attributes/>
       <specification_method>filename</specification_method>
       <trans_object_id/>
-      <filename>C:/TP1_ISI/concatenar.ktr</filename>
+      <filename>C:/ISI/TP1/Dados_Sensores_Lug.ktr</filename>
       <transname/>
       <arg_from_previous>N</arg_from_previous>
       <params_from_previous>N</params_from_previous>
@@ -352,14 +352,14 @@
       <description/>
       <type>DTD_VALIDATOR</type>
       <attributes/>
-      <xmlfilename>C:\TP1_ISI\Empty.xml</xmlfilename>
-      <dtdfilename>C:\TP1_ISI\Empty.dtd</dtdfilename>
+      <xmlfilename>${Internal.Transformation.Filename.Directory}/resultados/Empty.xml</xmlfilename>
+      <dtdfilename>${Internal.Transformation.Filename.Directory}/Empty2.dtd</dtdfilename>
       <dtdintern>N</dtdintern>
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>496</xloc>
-      <yloc>96</yloc>
+      <xloc>448</xloc>
+      <yloc>128</yloc>
       <attributes_kjc/>
     </entry>
     <entry>
@@ -370,22 +370,7 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>736</xloc>
-      <yloc>176</yloc>
-      <attributes_kjc/>
-    </entry>
-    <entry>
-      <name>DTD validator Empty Correct</name>
-      <description/>
-      <type>DTD_VALIDATOR</type>
-      <attributes/>
-      <xmlfilename>C:\TP1_ISI\Empty2.xml</xmlfilename>
-      <dtdfilename>C:\TP1_ISI\Empty2.dtd</dtdfilename>
-      <dtdintern>N</dtdintern>
-      <parallel>N</parallel>
-      <draw>Y</draw>
-      <nr>0</nr>
-      <xloc>496</xloc>
+      <xloc>624</xloc>
       <yloc>176</yloc>
       <attributes_kjc/>
     </entry>
@@ -394,14 +379,14 @@
       <description/>
       <type>DTD_VALIDATOR</type>
       <attributes/>
-      <xmlfilename>C:\TP1_ISI\Occupied.xml</xmlfilename>
-      <dtdfilename>C:\TP1_ISI\Occupied.dtd</dtdfilename>
+      <xmlfilename>${Internal.Transformation.Filename.Directory}/resultados/Occupied.xml</xmlfilename>
+      <dtdfilename>${Internal.Transformation.Filename.Directory}/Occupied.dtd</dtdfilename>
       <dtdintern>N</dtdintern>
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>496</xloc>
-      <yloc>256</yloc>
+      <xloc>448</xloc>
+      <yloc>208</yloc>
       <attributes_kjc/>
     </entry>
   </entries>
@@ -435,15 +420,6 @@
     </hop>
     <hop>
       <from>Transformation</from>
-      <to>DTD validator Empty Correct</to>
-      <from_nr>0</from_nr>
-      <to_nr>0</to_nr>
-      <enabled>Y</enabled>
-      <evaluation>Y</evaluation>
-      <unconditional>N</unconditional>
-    </hop>
-    <hop>
-      <from>Transformation</from>
       <to>DTD validator Occupied</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
@@ -453,15 +429,6 @@
     </hop>
     <hop>
       <from>DTD validator Occupied</from>
-      <to>Success</to>
-      <from_nr>0</from_nr>
-      <to_nr>0</to_nr>
-      <enabled>Y</enabled>
-      <evaluation>Y</evaluation>
-      <unconditional>N</unconditional>
-    </hop>
-    <hop>
-      <from>DTD validator Empty Correct</from>
       <to>Success</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>

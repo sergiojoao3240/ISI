@@ -1,6 +1,14 @@
 <!ELEMENT Parque (Estacionamento*)>
 
-<!ELEMENT Estacionamento (setor,lugar,estado,dia,hora,matricula,result)>
+<!ELEMENT Estacionamento (Brand,Model,LicensePlate,Type,setor,lugar,estado,dia,hora,matricula,result)>
+
+<!ELEMENT Brand(#PCDATA)>
+
+<!ELEMENT Model(#PCDATA)>
+
+<!ELEMENT LicensePlate(#PCDATA)>
+
+<!ELEMENT Type(#PCDATA)>
 
 <!ELEMENT setor (#PCDATA)>
 

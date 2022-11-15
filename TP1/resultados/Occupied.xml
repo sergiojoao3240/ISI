@@ -1,8 +1,7 @@
 <?xml version='1.0' encoding='ISO-8859-1'?>
 <Parque>
 <Estacionamento><setor> 01</setor> <lugar> 004</lugar> <estado> 1</estado> <dia> 22112022</dia> <hora> 0948</hora> <matricula>PT-44-WP</matricula> <result>Y</result></Estacionamento>
-<Estacionamento><setor> 01</setor> <lugar> 003</lugar> <estado> 1</estado> <dia> 01112022</dia> <hora> 1042</hora> <matricula>AA-00-AA</matricula> <result>Y</result></Estacionamento>
-<Estacionamento><setor> 01</setor> <lugar> 002</lugar> <estado> 1</estado> <dia> 01112022</dia> <hora> 1025</hora> <matricula>01-23-XW</matricula> <result>Y</result></Estacionamento>
-<Estacionamento><setor> 02</setor> <lugar> 004</lugar> <estado> 1</estado> <dia> 23042022</dia> <hora> 1023</hora> <matricula>AA-98-XC</matricula> <result>Y</result></Estacionamento>
 <Estacionamento><setor> 02</setor> <lugar> 001</lugar> <estado> 1</estado> <dia> 01112022</dia> <hora> 1121</hora> <matricula>QW-23-23</matricula> <result>Y</result></Estacionamento>
+<Estacionamento><setor> 02</setor> <lugar> 004</lugar> <estado> 1</estado> <dia> 23042022</dia> <hora> 1023</hora> <matricula>AA-98-XC</matricula> <result>Y</result></Estacionamento>
+<Estacionamento><setor> 01</setor> <lugar> 003</lugar> <estado> 1</estado> <dia> 01112022</dia> <hora> 1042</hora> <matricula>AA-00-AA</matricula> <result>Y</result></Estacionamento>
 </Parque>
