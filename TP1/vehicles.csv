@@ -1,13 +1,22 @@
-Brand,Model,LicensePlate,Type
-BMW,X3,FG-CF-48,Diesel
-Ford,Fiesta,AB-CD-01,Petrol
-Renault,Zoe,ZX-60-53,Electric
-Seat,Ibiza,23-AB-25,Reduced Mobility
-Fiat,Punto,50-25-BJ,Diesel
-Toyota,Prius,79-AZ-43,Electric
-Honda,Civic,AD-70-25,Reduced Mobility
-Seat,Ibiza,23-AJ-25,Reduced Mobility
-Renault,Zoe,01-AA-25,Electric
-Renault,Zoe,20-NM-53,Electric
-Renault,Zoe,ZW-60,Electric
-Seat,Ibiza,23-AJ-25,Reduced Mobility
+NIFS,Brand,Model,LicensePlate,Type
+274542330,BMW,X3,FG-CF-48,Diesel
+287229289,Ford,Fiesta,AB-CD-01,Petrol
+153637989,Renault,Zoe,ZX-60-53,Electric
+233668847,Seat,Ibiza,23-AB-25,Reduced Mobility
+518223052,Fiat,Punto,50-25-BJ,Diesel
+178544577,Toyota,Prius,79-AZ-43,Electric
+308619332,Honda,Civic,AD-70-25,Reduced Mobility
+221215847,Seat,Ibiza,23-AJ-25,Reduced Mobility
+149969591,Renault,Zoe,01-AA-25,Electric
+242941069,Renault,Zoe,20-NM-53,Electric
+259655502,Renault,Zoe,ZW-60,Electric
+243833921,Seat,Ibiza,23-AJ-25,Reduced Mobility
+243833921,Seat,Ibiza,23-AJ-25,Reduced Mobility
+111583446,Seat,Ibiza,45-XJ-05,Reduced Mobility
+178638800,Seat,Ibiza,29-ZJ-65,Petrol
+528231756,Seat,Ibiza,26-XP-25,Diesel
+155210415,Seat,Ibiza,90-XA-33,Reduced Mobility
+125806129,Suzuki,Swift,23-PP-25,GPL
+243833921,Seat,Ibiza,23-AJ-25,Reduced Mobility
+525377601,Honda,CBR,01-FT-02,Motorcycle
+506916984,Kawasaki,Ninja,07-ZX-02,Motorcycle

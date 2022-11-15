@@ -1,7 +1,7 @@
 <!ELEMENT Vehicles (Vehicle)*>
-<!ELEMENT Vehicle (Brand, Model, LicensePlate, Type, Valid)>
+<!ELEMENT Vehicle (NIF, Brand, Model, LicensePlate, Type)>
+<!ELEMENT NIF (#PCDATA)>
 <!ELEMENT Brand (#PCDATA)>
 <!ELEMENT Model (#PCDATA)>
 <!ELEMENT LicensePlate (#PCDATA)>
 <!ELEMENT Type (#PCDATA)>
-<!ELEMENT Valid (#PCDATA)>

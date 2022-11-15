@@ -1,13 +1,19 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <Vehicles>
-<Vehicle><Brand>BMW</Brand> <Model>X3</Model> <LicensePlate>FG-CF-48</LicensePlate> <Type>G</Type> <Valid>Y</Valid></Vehicle>
-<Vehicle><Brand>Fiat</Brand> <Model>Punto</Model> <LicensePlate>50-25-BJ</LicensePlate> <Type>G</Type> <Valid>Y</Valid></Vehicle>
-<Vehicle><Brand>Ford</Brand> <Model>Fiesta</Model> <LicensePlate>AB-CD-01</LicensePlate> <Type>G</Type> <Valid>Y</Valid></Vehicle>
-<Vehicle><Brand>Honda</Brand> <Model>Civic</Model> <LicensePlate>AD-70-25</LicensePlate> <Type>RM</Type> <Valid>Y</Valid></Vehicle>
-<Vehicle><Brand>Renault</Brand> <Model>Zoe</Model> <LicensePlate>ZX-60-53</LicensePlate> <Type>E</Type> <Valid>Y</Valid></Vehicle>
-<Vehicle><Brand>Renault</Brand> <Model>Zoe</Model> <LicensePlate>01-AA-25</LicensePlate> <Type>E</Type> <Valid>Y</Valid></Vehicle>
-<Vehicle><Brand>Renault</Brand> <Model>Zoe</Model> <LicensePlate>20-NM-53</LicensePlate> <Type>E</Type> <Valid>Y</Valid></Vehicle>
-<Vehicle><Brand>Seat</Brand> <Model>Ibiza</Model> <LicensePlate>23-AB-25</LicensePlate> <Type>RM</Type> <Valid>Y</Valid></Vehicle>
-<Vehicle><Brand>Seat</Brand> <Model>Ibiza</Model> <LicensePlate>23-AJ-25</LicensePlate> <Type>RM</Type> <Valid>Y</Valid></Vehicle>
-<Vehicle><Brand>Toyota</Brand> <Model>Prius</Model> <LicensePlate>79-AZ-43</LicensePlate> <Type>E</Type> <Valid>Y</Valid></Vehicle>
+<Vehicle><NIF>274542330</NIF> <Brand>BMW</Brand> <Model>X3</Model> <LicensePlate>FG-CF-48</LicensePlate> <Type>G</Type></Vehicle>
+<Vehicle><NIF>518223052</NIF> <Brand>Fiat</Brand> <Model>Punto</Model> <LicensePlate>50-25-BJ</LicensePlate> <Type>G</Type></Vehicle>
+<Vehicle><NIF>287229289</NIF> <Brand>Ford</Brand> <Model>Fiesta</Model> <LicensePlate>AB-CD-01</LicensePlate> <Type>G</Type></Vehicle>
+<Vehicle><NIF>525377601</NIF> <Brand>Honda</Brand> <Model>CBR</Model> <LicensePlate>01-FT-02</LicensePlate> <Type>M</Type></Vehicle>
+<Vehicle><NIF>308619332</NIF> <Brand>Honda</Brand> <Model>Civic</Model> <LicensePlate>AD-70-25</LicensePlate> <Type>RM</Type></Vehicle>
+<Vehicle><NIF>506916984</NIF> <Brand>Kawasaki</Brand> <Model>Ninja</Model> <LicensePlate>07-ZX-02</LicensePlate> <Type>M</Type></Vehicle>
+<Vehicle><NIF>149969591</NIF> <Brand>Renault</Brand> <Model>Zoe</Model> <LicensePlate>01-AA-25</LicensePlate> <Type>E</Type></Vehicle>
+<Vehicle><NIF>242941069</NIF> <Brand>Renault</Brand> <Model>Zoe</Model> <LicensePlate>20-NM-53</LicensePlate> <Type>E</Type></Vehicle>
+<Vehicle><NIF>153637989</NIF> <Brand>Renault</Brand> <Model>Zoe</Model> <LicensePlate>ZX-60-53</LicensePlate> <Type>E</Type></Vehicle>
+<Vehicle><NIF>233668847</NIF> <Brand>Seat</Brand> <Model>Ibiza</Model> <LicensePlate>23-AB-25</LicensePlate> <Type>RM</Type></Vehicle>
+<Vehicle><NIF>111583446</NIF> <Brand>Seat</Brand> <Model>Ibiza</Model> <LicensePlate>45-XJ-05</LicensePlate> <Type>RM</Type></Vehicle>
+<Vehicle><NIF>155210415</NIF> <Brand>Seat</Brand> <Model>Ibiza</Model> <LicensePlate>90-XA-33</LicensePlate> <Type>RM</Type></Vehicle>
+<Vehicle><NIF>528231756</NIF> <Brand>Seat</Brand> <Model>Ibiza</Model> <LicensePlate>26-XP-25</LicensePlate> <Type>G</Type></Vehicle>
+<Vehicle><NIF>178638800</NIF> <Brand>Seat</Brand> <Model>Ibiza</Model> <LicensePlate>29-ZJ-65</LicensePlate> <Type>G</Type></Vehicle>
+<Vehicle><NIF>125806129</NIF> <Brand>Suzuki</Brand> <Model>Swift</Model> <LicensePlate>23-PP-25</LicensePlate> <Type>G</Type></Vehicle>
+<Vehicle><NIF>178544577</NIF> <Brand>Toyota</Brand> <Model>Prius</Model> <LicensePlate>79-AZ-43</LicensePlate> <Type>E</Type></Vehicle>
 </Vehicles>
