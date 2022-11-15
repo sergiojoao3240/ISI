@@ -1,3 +1,11 @@
+<<<<<<< HEAD
+NIF;Brand;Model;LicensePlate;Type
+233668847;Seat    ;Ibiza   ;23-AB-25        ;RM              
+111583446;Seat    ;Ibiza   ;45-XJ-05        ;RM              
+155210415;Seat    ;Ibiza   ;90-XA-33        ;RM              
+308619332;Honda   ;Civic   ;AD-70-25        ;RM              
+=======
 Brand;Model;LicensePlate;Type
 Seat   ;Ibiza ;AA-00-AA;RM              
 Honda  ;Civic ;AA-98-XC;RM              
+>>>>>>> 77582441c5a7eb15440c1f84ae1fa8e55c1de366

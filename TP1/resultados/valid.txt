@@ -1,3 +1,26 @@
+<<<<<<< HEAD
+?numero;Nome;NIF;result;NIFS;Brand;Model;LicensePlate;Type;Valid
+25;António Silva                             ;274542330;Y; 274542330;BMW     ;X3      ;FG-CF-48        ;Diesel          ;Y
+37;Maria Oliveira                            ;233668847;Y; 233668847;Seat    ;Ibiza   ;23-AB-25        ;Reduced Mobility;Y
+22;Bruno Moreira                             ;153637989;Y; 153637989;Renault ;Zoe     ;ZX-60-53        ;Electric        ;Y
+47;Limp Lar                                  ;518223052;Y; 518223052;Fiat    ;Punto   ;50-25-BJ        ;Diesel          ;Y
+48;Elvira Vieira                             ;178544577;Y; 178544577;Toyota  ;Prius   ;79-AZ-43        ;Electric        ;Y
+5;Bruno Monteiro                            ;308619332;Y; 308619332;Honda   ;Civic   ;AD-70-25        ;Reduced Mobility;Y
+53;Iva Eiras                                 ;221215847;Y; 221215847;Seat    ;Ibiza   ;23-AJ-25        ;Reduced Mobility;Y
+40;Cidalina Cunha                            ;149969591;Y; 149969591;Renault ;Zoe     ;01-AA-25        ;Electric        ;Y
+14;Ricardo Campos                            ;242941069;Y; 242941069;Renault ;Zoe     ;20-NM-53        ;Electric        ;Y
+51;Joana Pereira                             ;243833921;Y; 243833921;Seat    ;Ibiza   ;23-AJ-25        ;Reduced Mobility;Y
+51;Joana Pereira                             ;243833921;Y; 243833921;Seat    ;Ibiza   ;23-AJ-25        ;Reduced Mobility;Y
+51;Joana Pereira                             ;243833921;Y; 243833921;Seat    ;Ibiza   ;23-AJ-25        ;Reduced Mobility;Y
+41;Lúcia Silva                               ;111583446;Y; 111583446;Seat    ;Ibiza   ;45-XJ-05        ;Reduced Mobility;Y
+9;Liliana Figueiredo                        ;178638800;Y; 178638800;Seat    ;Ibiza   ;29-ZJ-65        ;Petrol          ;Y
+15;Ricardo Santos                            ;125806129;Y; 125806129;Suzuki  ;Swift   ;23-PP-25        ;GPL             ;Y
+41;Dona Faxina                               ;506916984;Y; 506916984;Kawasaki;Ninja   ;07-ZX-02        ;Motorcycle      ;Y
+59;Serviço de restauração do Cloud Nine Flood;525377601;Y; 525377601;Honda   ;CBR     ;01-FT-02        ;Motorcycle      ;Y
+14;Restauração de água americana             ;528231756;Y; 528231756;Seat    ;Ibiza   ;26-XP-25        ;Diesel          ;Y
+18;Lucília Esteves                           ;155210415;Y; 155210415;Seat    ;Ibiza   ;90-XA-33        ;Reduced Mobility;Y
+2;Hélder Ribeiro                            ;287229289;Y; 287229289;Ford    ;Fiesta  ;AB-CD-01        ;Petrol          ;Y
+=======
 Brand;Model;LicensePlate;Type;Valid
 BMW    ;X3    ;PT-44-WP;Diesel          ;Y
 Ford   ;Fiesta;AB-CD-01;Petrol          ;Y
@@ -10,3 +33,4 @@ Seat   ;Ibiza ;23-AJ-25;Reduced Mobility;Y
 Renault;Zoe   ;01-AA-25;Electric        ;Y
 Renault;Zoe   ;20-NM-53;Electric        ;Y
 Seat   ;Ibiza ;23-AJ-25;Reduced Mobility;Y
+>>>>>>> 77582441c5a7eb15440c1f84ae1fa8e55c1de366

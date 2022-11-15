@@ -1,5 +1,5 @@
-Brand;Model;LicensePlate;Type
-Renault;Zoe   ;01-AA-25;E               
-Renault;Zoe   ;20-NM-53;E               
-Toyota ;Prius ;79-AZ-43;E               
-Renault;Zoe   ;ZX-60-53;E               
+NIF;Brand;Model;LicensePlate;Type
+149969591;Renault ;Zoe     ;01-AA-25        ;E               
+242941069;Renault ;Zoe     ;20-NM-53        ;E               
+178544577;Toyota  ;Prius   ;79-AZ-43        ;E               
+153637989;Renault ;Zoe     ;ZX-60-53        ;E               
