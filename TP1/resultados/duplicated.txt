@@ -1,2 +1,2 @@
 ?numero;Nome;NIF;result;NIFS;Brand;Model;LicensePlate;Type;Valid;Duplicated
-53;Iva Eiras                                 ;221215847;Y; 221215847;Seat    ;Ibiza   ;23-AJ-25        ;Reduced Mobility;Y;4
+53;Iva Eiras                                 ;221215847;Y;221215847;Seat    ;Ibiza ;23-AJ-25;Reduced Mobility;Y;4

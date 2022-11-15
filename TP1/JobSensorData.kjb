@@ -315,7 +315,7 @@
       <attributes/>
       <specification_method>filename</specification_method>
       <trans_object_id/>
-      <filename>C:/ISI/TP1/Dados_Sensores_Lug.ktr</filename>
+      <filename>${Internal.Transformation.Filename.Directory}/Dados_Sensores_Lug.ktr</filename>
       <transname/>
       <arg_from_previous>N</arg_from_previous>
       <params_from_previous>N</params_from_previous>

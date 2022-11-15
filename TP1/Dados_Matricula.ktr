@@ -12,9 +12,9 @@
     </parameters>
     <log>
       <trans-log-table>
-        <connection>log</connection>
+        <connection/>
         <schema/>
-        <table>Transformation</table>
+        <table/>
         <size_limit_lines/>
         <interval/>
         <timeout_days/>
@@ -126,9 +126,9 @@
         </field>
       </trans-log-table>
       <perf-log-table>
-        <connection>log</connection>
+        <connection/>
         <schema/>
-        <table>Performance</table>
+        <table/>
         <interval/>
         <timeout_days/>
         <field>
@@ -208,9 +208,9 @@
         </field>
       </perf-log-table>
       <channel-log-table>
-        <connection>log</connection>
+        <connection/>
         <schema/>
-        <table>Logging</table>
+        <table/>
         <timeout_days/>
         <field>
           <id>ID_BATCH</id>
@@ -274,9 +274,9 @@
         </field>
       </channel-log-table>
       <step-log-table>
-        <connection>log</connection>
+        <connection/>
         <schema/>
-        <table>Step</table>
+        <table/>
         <timeout_days/>
         <field>
           <id>ID_BATCH</id>
@@ -350,9 +350,9 @@
         </field>
       </step-log-table>
       <metrics-log-table>
-        <connection>log</connection>
+        <connection/>
         <schema/>
-        <table>Metrics</table>
+        <table/>
         <timeout_days/>
         <field>
           <id>ID_BATCH</id>
@@ -436,69 +436,6 @@
   </info>
   <notepads>
   </notepads>
-  <connection>
-    <name>log</name>
-    <server>localhost</server>
-    <type>MYSQL</type>
-    <access>Native</access>
-    <database>logs</database>
-    <port>3306</port>
-    <username>root</username>
-    <password>Encrypted 2be98afc86aa7b893fa40fe278cc2fe8e</password>
-    <servername/>
-    <data_tablespace/>
-    <index_tablespace/>
-    <attributes>
-      <attribute>
-        <code>EXTRA_OPTION_MYSQL.defaultFetchSize</code>
-        <attribute>500</attribute>
-      </attribute>
-      <attribute>
-        <code>EXTRA_OPTION_MYSQL.useCursorFetch</code>
-        <attribute>true</attribute>
-      </attribute>
-      <attribute>
-        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
-        <attribute>N</attribute>
-      </attribute>
-      <attribute>
-        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
-        <attribute>N</attribute>
-      </attribute>
-      <attribute>
-        <code>IS_CLUSTERED</code>
-        <attribute>N</attribute>
-      </attribute>
-      <attribute>
-        <code>PORT_NUMBER</code>
-        <attribute>3306</attribute>
-      </attribute>
-      <attribute>
-        <code>PRESERVE_RESERVED_WORD_CASE</code>
-        <attribute>Y</attribute>
-      </attribute>
-      <attribute>
-        <code>QUOTE_ALL_FIELDS</code>
-        <attribute>N</attribute>
-      </attribute>
-      <attribute>
-        <code>STREAM_RESULTS</code>
-        <attribute>Y</attribute>
-      </attribute>
-      <attribute>
-        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
-        <attribute>Y</attribute>
-      </attribute>
-      <attribute>
-        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
-        <attribute>Y</attribute>
-      </attribute>
-      <attribute>
-        <code>USE_POOLING</code>
-        <attribute>N</attribute>
-      </attribute>
-    </attributes>
-  </connection>
   <order>
     <hop>
       <from>Regex License Plate</from>
@@ -670,12 +607,12 @@
       <field>
         <name>NIFS</name>
         <type>Integer</type>
-        <format/>
+        <format>#</format>
         <currency>€</currency>
         <decimal>,</decimal>
         <group>.</group>
-        <length>9</length>
-        <precision>-1</precision>
+        <length>15</length>
+        <precision>0</precision>
         <trim_type>none</trim_type>
       </field>
       <field>
@@ -696,7 +633,7 @@
         <currency>€</currency>
         <decimal>,</decimal>
         <group>.</group>
-        <length>8</length>
+        <length>6</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
       </field>
@@ -707,7 +644,7 @@
         <currency>€</currency>
         <decimal>,</decimal>
         <group>.</group>
-        <length>16</length>
+        <length>8</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
       </field>

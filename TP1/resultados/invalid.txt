@@ -1,2 +1,2 @@
 ?numero;Nome;NIF;result;NIFS;Brand;Model;LicensePlate;Type;Valid
-4;José Silva                                ;259655502;Y; 259655502;Renault ;Zoe     ;ZW-60           ;Electric        ;N
+4;José Silva                                ;259655502;Y;259655502;Renault ;Zoe   ;ZW-60   ;Electric        ;N

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ?numero;Nome;CP4;CP3;Rua;contacto;NIF;email;DataNasc;genero;tipo
 77;Angelina Duarte99                         ;4487;160;Rua Nova da Fonte                      ;914151332;173030228;wuvel@ipca.pt;25/05/1975;F;colaborador    
 55;Susana Costa                              ;4080;160;Rua do Casal                           ;930012907;277208852;@ipca.pt     ;03/11/1963;F;1              
@@ -34,8 +33,3 @@
 22;Vip Protect                               ;4249;12;Avenida de Larim                       ;96080973;518557695;lebem@ipca.pt;;-;3              
 19;Protech                                   ;4613;44;Avenida de Larim                       ;928723005;5168120;sosov@ipca   ;;-;3              
 36;Restauração 911                           ;4455;6;Avenida Viscondes da Torre             ;9280032;503423033;@ipca.pt     ;;-;3              
-=======
-?numero;Nome;CP4;CP3;Rua;contacto;NIF;email;DataNasc;genero;tipoutilizador;N;tipo;result;Error message
-55;Susana Costa                              ;4080;160;Rua do Casal                           ;930012907;277208852;@ipca.pt     ;03/11/1963;F;1;1;aluno          ;no ok                                                                                               ;Malformed address @ipca.pt!                                                                         
-8;Elisabete Barbosa                         ;4907;117;Travessa de Sampaio                    ;961761813;287229289;ipca.pt      ;29/06/1959;F;2;2;colaborador    ;no ok                                                                                               ;Malformed address ipca.pt!                                                                          
->>>>>>> d585c53511d21bcf4f464e13f658dab3b3550d7f
