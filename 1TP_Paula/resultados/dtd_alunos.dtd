@@ -2,7 +2,7 @@
 [
 <!-- Declaracao de elementos -->
 
-<!ELEMENT alunos (aluno)>
+<!ELEMENT alunos (aluno*)>
 <!ELEMENT aluno (numero, nome, cp4, cp3, rua, contacto, nif, email, datanasc, genero, tipo)>
 
 

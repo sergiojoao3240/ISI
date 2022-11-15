@@ -2,7 +2,7 @@
 [
 <!-- Declaracao de elementos -->
 
-<!ELEMENT outrosUtilizadores (outroUtilizador)>
+<!ELEMENT outrosUtilizadores (outroUtilizador*)>
 <!ELEMENT outroUtilizador (numero, nome, cp4, cp3, rua, contacto, nif, email, datanasc?, genero?, tipo?)>
 
 
