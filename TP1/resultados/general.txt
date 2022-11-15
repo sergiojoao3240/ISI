@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 NIF;Brand;Model;LicensePlate;Type
 125806129;Suzuki  ;Swift   ;23-PP-25        ;G               
 528231756;Seat    ;Ibiza   ;26-XP-25        ;G               
@@ -5,3 +6,9 @@ NIF;Brand;Model;LicensePlate;Type
 518223052;Fiat    ;Punto   ;50-25-BJ        ;G               
 287229289;Ford    ;Fiesta  ;AB-CD-01        ;G               
 274542330;BMW     ;X3      ;FG-CF-48        ;G               
+=======
+Brand;Model;LicensePlate;Type
+Ford   ;Fiesta;AB-CD-01;G               
+BMW    ;X3    ;PT-44-WP;G               
+Fiat   ;Punto ;QW-23-23;G               
+>>>>>>> 77582441c5a7eb15440c1f84ae1fa8e55c1de366

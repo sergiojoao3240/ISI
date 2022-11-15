@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 NIFS,Brand,Model,LicensePlate,Type
 274542330,BMW,X3,FG-CF-48,Diesel
 287229289,Ford,Fiesta,AB-CD-01,Petrol
@@ -20,3 +21,18 @@ NIFS,Brand,Model,LicensePlate,Type
 243833921,Seat,Ibiza,23-AJ-25,Reduced Mobility
 525377601,Honda,CBR,01-FT-02,Motorcycle
 506916984,Kawasaki,Ninja,07-ZX-02,Motorcycle
+=======
+Brand,Model,LicensePlate,Type
+BMW,X3,PT-44-WP,Diesel
+Ford,Fiesta,AB-CD-01,Petrol
+Renault,Zoe,ZX-60-53,Electric
+Seat,Ibiza,AA-00-AA,Reduced Mobility
+Fiat,Punto,QW-23-23,Diesel
+Toyota,Prius,79-AZ-43,Electric
+Honda,Civic,AA-98-XC,Reduced Mobility
+Seat,Ibiza,23-AJ-25,Reduced Mobility
+Renault,Zoe,01-AA-25,Electric
+Renault,Zoe,20-NM-53,Electric
+Renault,Zoe,ZW-60,Electric
+Seat,Ibiza,23-AJ-25,Reduced Mobility
+>>>>>>> 77582441c5a7eb15440c1f84ae1fa8e55c1de366

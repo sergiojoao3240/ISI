@@ -316,7 +316,11 @@
       <attributes/>
       <specification_method>filename</specification_method>
       <trans_object_id/>
+<<<<<<< HEAD
       <filename>${Internal.Transformation.Filename.Directory}/Dados_Utilizador.ktr</filename>
+=======
+      <filename>C:/Users/paula/Desktop/TP1_ISI/ISI/TP1/Dados_Utilizador.ktr</filename>
+>>>>>>> 77582441c5a7eb15440c1f84ae1fa8e55c1de366
       <transname/>
       <arg_from_previous>N</arg_from_previous>
       <params_from_previous>N</params_from_previous>
@@ -438,6 +442,7 @@
       <yloc>160</yloc>
       <attributes_kjc/>
     </entry>
+<<<<<<< HEAD
     <entry>
       <name>Mail</name>
       <description/>
@@ -481,6 +486,8 @@
       <yloc>160</yloc>
       <attributes_kjc/>
     </entry>
+=======
+>>>>>>> 77582441c5a7eb15440c1f84ae1fa8e55c1de366
   </entries>
   <hops>
     <hop>
@@ -516,15 +523,6 @@
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
       <enabled>Y</enabled>
-      <evaluation>Y</evaluation>
-      <unconditional>N</unconditional>
-    </hop>
-    <hop>
-      <from>Success</from>
-      <to>Mail</to>
-      <from_nr>0</from_nr>
-      <to_nr>0</to_nr>
-      <enabled>N</enabled>
       <evaluation>Y</evaluation>
       <unconditional>N</unconditional>
     </hop>

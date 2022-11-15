@@ -287,12 +287,12 @@
   <shared_objects_file/>
   <entries>
     <entry>
-      <name>DTD validator</name>
+      <name>Alunos</name>
       <description/>
       <type>DTD_VALIDATOR</type>
       <attributes/>
-      <xmlfilename>C:\3ano_ISI\1TP\resultados\dados_alunos.xml</xmlfilename>
-      <dtdfilename>C:\3ano_ISI\1TP\resultados\dtd_alunos.dtd</dtdfilename>
+      <xmlfilename>${Internal.Transformation.Filename.Directory}\resultados\dados_alunos.xml</xmlfilename>
+      <dtdfilename>${Internal.Transformation.Filename.Directory}\resultados\dtd_alunos.dtd</dtdfilename>
       <dtdintern>N</dtdintern>
       <parallel>N</parallel>
       <draw>Y</draw>
@@ -319,8 +319,8 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>224</xloc>
-      <yloc>256</yloc>
+      <xloc>128</xloc>
+      <yloc>432</yloc>
       <attributes_kjc/>
     </entry>
     <entry>
@@ -331,37 +331,96 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>512</xloc>
-      <yloc>240</yloc>
+      <xloc>544</xloc>
+      <yloc>176</yloc>
       <attributes_kjc/>
     </entry>
     <entry>
-      <name>Dummy</name>
+      <name>Colaborador</name>
       <description/>
-      <type>SPECIAL</type>
+      <type>DTD_VALIDATOR</type>
       <attributes/>
-      <start>N</start>
-      <dummy>Y</dummy>
-      <repeat>N</repeat>
-      <schedulerType>0</schedulerType>
-      <intervalSeconds>0</intervalSeconds>
-      <intervalMinutes>60</intervalMinutes>
-      <hour>12</hour>
-      <minutes>0</minutes>
-      <weekDay>1</weekDay>
-      <DayOfMonth>1</DayOfMonth>
+      <xmlfilename>${Internal.Transformation.Filename.Directory}\resultados\dados_colaboradores.xml</xmlfilename>
+      <dtdfilename>${Internal.Transformation.Filename.Directory}\resultados\dtd_colaboradores.dtd</dtdfilename>
+      <dtdintern>N</dtdintern>
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>512</xloc>
-      <yloc>336</yloc>
+      <xloc>352</xloc>
+      <yloc>384</yloc>
+      <attributes_kjc/>
+    </entry>
+    <entry>
+      <name>empresas externas</name>
+      <description/>
+      <type>DTD_VALIDATOR</type>
+      <attributes/>
+      <xmlfilename>${Internal.Transformation.Filename.Directory}\resultados\dados_empresa_externas.xml</xmlfilename>
+      <dtdfilename>${Internal.Transformation.Filename.Directory}\resultados\dtd_cempresa.dtd</dtdfilename>
+      <dtdintern>N</dtdintern>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>352</xloc>
+      <yloc>528</yloc>
+      <attributes_kjc/>
+    </entry>
+    <entry>
+      <name>Outros</name>
+      <description/>
+      <type>DTD_VALIDATOR</type>
+      <attributes/>
+      <xmlfilename>${Internal.Transformation.Filename.Directory}\resultados\dados_outros_utilizadores.xml</xmlfilename>
+      <dtdfilename>${Internal.Transformation.Filename.Directory}\resultados\dtd_outros.dtd</dtdfilename>
+      <dtdintern>N</dtdintern>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>352</xloc>
+      <yloc>656</yloc>
+      <attributes_kjc/>
+    </entry>
+    <entry>
+      <name>Success 2</name>
+      <description/>
+      <type>SUCCESS</type>
+      <attributes/>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>544</xloc>
+      <yloc>352</yloc>
+      <attributes_kjc/>
+    </entry>
+    <entry>
+      <name>Success 3</name>
+      <description/>
+      <type>SUCCESS</type>
+      <attributes/>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>544</xloc>
+      <yloc>560</yloc>
+      <attributes_kjc/>
+    </entry>
+    <entry>
+      <name>Success 4</name>
+      <description/>
+      <type>SUCCESS</type>
+      <attributes/>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>544</xloc>
+      <yloc>688</yloc>
       <attributes_kjc/>
     </entry>
   </entries>
   <hops>
     <hop>
       <from>Start</from>
-      <to>DTD validator</to>
+      <to>Alunos</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
       <enabled>Y</enabled>
@@ -369,7 +428,7 @@
       <unconditional>Y</unconditional>
     </hop>
     <hop>
-      <from>DTD validator</from>
+      <from>Alunos</from>
       <to>Success</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
@@ -378,12 +437,57 @@
       <unconditional>N</unconditional>
     </hop>
     <hop>
-      <from>DTD validator</from>
-      <to>Dummy</to>
+      <from>Start</from>
+      <to>Colaborador</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
-      <enabled>N</enabled>
-      <evaluation>N</evaluation>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>Y</unconditional>
+    </hop>
+    <hop>
+      <from>Start</from>
+      <to>empresas externas</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>Y</unconditional>
+    </hop>
+    <hop>
+      <from>Start</from>
+      <to>Outros</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>Y</unconditional>
+    </hop>
+    <hop>
+      <from>Colaborador</from>
+      <to>Success 2</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>empresas externas</from>
+      <to>Success 3</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Outros</from>
+      <to>Success 4</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
       <unconditional>N</unconditional>
     </hop>
   </hops>

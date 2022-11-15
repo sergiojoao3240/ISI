@@ -1,6 +1,6 @@
 <!ELEMENT Parque (Estacionamento*)>
 
-<!ELEMENT Estacionamento (setor,lugar,estado,dia,hora,matricula)>
+<!ELEMENT Estacionamento (setor,lugar,estado,dia,hora,matricula,result)>
 
 <!ELEMENT setor (#PCDATA)>
 
@@ -15,3 +15,4 @@
 <!ELEMENT matricula (#PCDATA)>
 
 <!ELEMENT result (#PCDATA)>
+

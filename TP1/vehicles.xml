@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Vehicles>
+<Vehicle><Brand>BMW</Brand> <Model>X3</Model> <LicensePlate>PT-44-WP</LicensePlate> <Type>G</Type></Vehicle>
+<Vehicle><Brand>Fiat</Brand> <Model>Punto</Model> <LicensePlate>QW-23-23</LicensePlate> <Type>G</Type></Vehicle>
+<Vehicle><Brand>Ford</Brand> <Model>Fiesta</Model> <LicensePlate>AB-CD-01</LicensePlate> <Type>G</Type></Vehicle>
+<Vehicle><Brand>Honda</Brand> <Model>Civic</Model> <LicensePlate>AA-98-XC</LicensePlate> <Type>RM</Type></Vehicle>
+<Vehicle><Brand>Renault</Brand> <Model>Zoe</Model> <LicensePlate>01-AA-25</LicensePlate> <Type>E</Type></Vehicle>
+<Vehicle><Brand>Renault</Brand> <Model>Zoe</Model> <LicensePlate>20-NM-53</LicensePlate> <Type>E</Type></Vehicle>
+<Vehicle><Brand>Renault</Brand> <Model>Zoe</Model> <LicensePlate>ZX-60-53</LicensePlate> <Type>E</Type></Vehicle>
+<Vehicle><Brand>Seat</Brand> <Model>Ibiza</Model> <LicensePlate>AA-00-AA</LicensePlate> <Type>RM</Type></Vehicle>
+<Vehicle><Brand>Toyota</Brand> <Model>Prius</Model> <LicensePlate>79-AZ-43</LicensePlate> <Type>E</Type></Vehicle>
+</Vehicles>

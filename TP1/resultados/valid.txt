@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ?numero;Nome;NIF;result;NIFS;Brand;Model;LicensePlate;Type;Valid
 25;António Silva                             ;274542330;Y; 274542330;BMW     ;X3      ;FG-CF-48        ;Diesel          ;Y
 37;Maria Oliveira                            ;233668847;Y; 233668847;Seat    ;Ibiza   ;23-AB-25        ;Reduced Mobility;Y
@@ -19,3 +20,17 @@
 14;Restauração de água americana             ;528231756;Y; 528231756;Seat    ;Ibiza   ;26-XP-25        ;Diesel          ;Y
 18;Lucília Esteves                           ;155210415;Y; 155210415;Seat    ;Ibiza   ;90-XA-33        ;Reduced Mobility;Y
 2;Hélder Ribeiro                            ;287229289;Y; 287229289;Ford    ;Fiesta  ;AB-CD-01        ;Petrol          ;Y
+=======
+Brand;Model;LicensePlate;Type;Valid
+BMW    ;X3    ;PT-44-WP;Diesel          ;Y
+Ford   ;Fiesta;AB-CD-01;Petrol          ;Y
+Renault;Zoe   ;ZX-60-53;Electric        ;Y
+Seat   ;Ibiza ;AA-00-AA;Reduced Mobility;Y
+Fiat   ;Punto ;QW-23-23;Diesel          ;Y
+Toyota ;Prius ;79-AZ-43;Electric        ;Y
+Honda  ;Civic ;AA-98-XC;Reduced Mobility;Y
+Seat   ;Ibiza ;23-AJ-25;Reduced Mobility;Y
+Renault;Zoe   ;01-AA-25;Electric        ;Y
+Renault;Zoe   ;20-NM-53;Electric        ;Y
+Seat   ;Ibiza ;23-AJ-25;Reduced Mobility;Y
+>>>>>>> 77582441c5a7eb15440c1f84ae1fa8e55c1de366
